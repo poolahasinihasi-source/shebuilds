@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">College Events</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero" id="home">
+            <h1>Welcome to College Event Portal</h1>
+            <p>Discover and register for exciting college events.</p>
+            <a href="#events" class="btn">View Events</a>
+        </section>
+
+        <section id="events">
+            <h2 style="text-align: center; margin-bottom: 25px;">
+                Upcoming Events
+            </h2>
+
+            <div class="events">
+
+                <div class="event-card">
+                    <h3>Technical Fest</h3>
+                    <p>Join exciting technical competitions and workshops.</p>
+                    <p class="event-date">Date: 15 October 2026</p>
+                    <button onclick="registerEvent('Technical Fest')">
+                        Register
+                    </button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Cultural Fest</h3>
+                    <p>Enjoy music, dance, drama and cultural activities.</p>
+                    <p class="event-date">Date: 20 October 2026</p>
+                    <button onclick="registerEvent('Cultural Fest')">
+                        Register
+                    </button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Sports Meet</h3>
+                    <p>Participate in exciting sports competitions.</p>
+                    <p class="event-date">Date: 25 October 2026</p>
+                    <button onclick="registerEvent('Sports Meet')">
+                        Register
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="register">
+            <form onsubmit="submitForm(event)">
+                <h2>Event Registration</h2>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Select Event</label>
+                    <select id="event" required>
+                        <option value="">Choose an event</option>
+                        <option value="Technical Fest">Technical Fest</option>
+                        <option value="Cultural Fest">Cultural Fest</option>
+                        <option value="Sports Meet">Sports Meet</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 College Event Portal</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

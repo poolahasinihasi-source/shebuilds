@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #c5addb;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.container {
+  width: 370px;
+  max-width: 90%;
+  margin: auto;
+  padding: 25px;
+  background: #faf9fc;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #8e7b9d;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.balance h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.balance h2 {
+  margin: 2px 0 25px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* Summary */
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffffff;
+  padding: 18px 10px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px #d2d2d2;
+}
+
+.summary-box {
+  text-align: center;
+  flex: 1;
+}
+
+.summary-box h3 {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+
+.summary-box p {
+  margin: 0;
+  font-size: 23px;
+}
+
+.income {
+  color: #4dcc68;
+}
+
+.expense {
+  color: #f15b61;
+}
+
+.line {
+  width: 1px;
+  height: 45px;
+  background: #ddd;
+}
+
+/* History */
+
+.history {
+  margin-top: 45px;
+}
+
+.history h2,
+.add-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.purple-line {
+  height: 2px;
+  background: #d8bce8;
+  margin-bottom: 20px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+
+  padding: 15px;
+
+  margin-bottom: 12px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 8px #d5d5d5;
+}
+
+.transaction-income {
+  border-right: 6px solid #4dcc68;
+}
+
+.transaction-expense {
+  border-right: 6px solid #f15b61;
+}
+
+/* Add Transaction */
+
+.add-section {
+  margin-top: 45px;
+}
+
+.add-section form {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #d5d5d5;
+}
+
+.add-section label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.add-section input[type="text"],
+.add-section input[type="number"] {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #d8c8e2;
+
+  border-radius: 6px;
+
+  margin-bottom: 12px;
+
+  font-size: 14px;
+}
+
+.radio-group {
+  margin: 5px 0 15px;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-group input {
+  margin-right: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 9px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #9560c7;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7f4caf;
+}

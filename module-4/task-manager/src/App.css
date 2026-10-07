@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+input {
+  width: 300px;
+  padding: 12px;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  background: #287dcc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1769b0;
+}
+
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+th {
+  background: #287dcc;
+  color: white;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+  background: #e5f2fc;
+}
